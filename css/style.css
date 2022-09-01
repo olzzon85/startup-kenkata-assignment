@@ -33,3 +33,90 @@
     --border-radius-medium: 25px;
     --border-radius-rounded: 50%;
 }
+
+/* general */
+html, body {
+    font-size: 16px;
+    line-height: 1.5;
+    font-family: var(--font-roboto);
+    font-weight: var(--font-weight-regular);
+    color: var(--color-theme-dark);
+}
+
+
+/* top-menu */
+.top-menu {
+    background-color: var(--color-theme);
+    color: var(--color-white);
+    height: 40px;
+}
+    .top-menu > .container {
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+
+    .top-menu .site-settings {
+        display: flex;
+    }
+    
+        .top-menu .site-settings .dropdown-theme {
+            background-color: var(--color-theme);
+            color: var(--color-white);
+        }
+
+            .top-menu .site-settings .dropdown-theme button {
+                background-color: var(--color-theme);
+                color: var(--color-white);
+                border: none;
+            }
+                .top-menu .site-settings .dropdown-theme button:hover {
+                    color: var(--color-theme-dark);
+                }
+
+            .top-menu .site-settings .dropdown-theme .dropdown-menu {
+                background-color: var(--color-theme);
+                color: var(--color-white);
+                border: none;
+                width: 250px;
+                margin-top: 3rem;
+            }
+                .top-menu .site-settings .dropdown-theme .dropdown-menu .dropdown-item {
+                    background-color: var(--color-theme);
+                    color: var(--color-white);
+                    border: none;
+                    width: 100%;
+                    margin:0 ;
+                    
+                }
+                    .top-menu .site-settings .dropdown-theme .dropdown-menu .dropdown-item:hover {
+                        background-color: var(--color-theme-dark);
+                        color: var(--color-white);
+                    
+                    }
+
+    .top-menu .menu-links a {
+        color: var(--color-white);
+        text-decoration: none;
+        margin: 0 1.2rem;
+    }
+        .top-menu .menu-links a:hover {
+            color: var(--color-theme-dark);
+        }
+
+        .top-menu .menu-links .social-media {
+            margin-left: 1rem;
+            font-size: var(--font-size-14);
+        }
+            .top-menu .menu-links .social-media a {
+                margin: 0 0.3rem;
+            }
+                .top-menu .menu-links .social-media a:last-child {
+                    margin: 0 0 0 0.3;
+                }
+
+    
+
+
