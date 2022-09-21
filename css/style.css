@@ -15,6 +15,7 @@
     --color-grey-2: #E3E3E3;
     --color-grey-3: #EEEEEE;
     --color-grey-4: #F6F6F6;
+    --color-grey-5: #777777;
     --color-product-instock: #82D8C6;
     --color-product-outofstock: #FE6C6C;
 
@@ -97,6 +98,10 @@ html, body {
 }
 .outofstock {
     color: var(--color-product-outofstock);
+}
+
+.required {
+    color: var(--color-theme);
 }
 
 
@@ -875,6 +880,60 @@ html, body {
             }
 
 
+.signup-signin {
+    margin: 6rem 0;
+} 
+    .signup-signin .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 2rem;
+        align-items: start;
+    } 
+        .signup-signin .card {
+            padding: 1.5rem;
+            border: none;
+            border-radius: var(--border-radius-small);
+            background-color: var(--color-grey-4);
+        }
+
+            .signup-signin .card .card-body h1 {
+                font-family: var(--font-roboto);
+                font-weight: var(--font-weight-medium);
+                color: var(--color-theme-dark);
+                font-size: 1.5rem;
+            }
+            .signup-signin .card .card-body .card-text {
+                margin: 1.5rem 0;
+                line-height: 2;
+            }
+
+                .signup-signin .card .card-body .card-text a {
+                    color: var(--color-theme);
+                    font-weight: var(--font-weight-medium);
+                    text-decoration: none;
+                }
+                    .signup-signin .card .card-body .card-text a:hover {
+                        color: var(--color-theme-dark);
+                        text-decoration: underline;
+                    }
+
+            .signup-signin .card .card-body .card-text.text-small {
+                color: var(--color-grey-5);
+                font-size: 0.875rem;
+            } 
+            
+#signupform input {
+    display: block;
+    width: 100%;
+    border: none;
+    border-radius: var(--border-radius-small);
+    padding: 0.6rem 0.9rem;
+    margin: 0.2rem 0;
+}
+    #signupform input:focus {
+        outline: 0;   
+        box-shadow: 0 0 3px 0 var(--color-grey-0);
+    }
 
         
 
@@ -899,7 +958,6 @@ html, body {
             display: block;  
         } 
 
-    
 }
 
 @media (min-width: 992px) {
