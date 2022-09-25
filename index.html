@@ -11,7 +11,7 @@
     <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
-
+<!-- top of the page, dropdowns for language and currencies and diffrent links on the other side -->
     <header>
         <div class="top-menu">
             <div class="container">
@@ -52,13 +52,18 @@
                 </div>
             </div>
         </div>
-    
+    <!--section with Kenkata logo and my account part  -->
         <div class="main-menu">
             <div class="container">
                 <div class="brand">
                     <a href="index.html"><img src="images/logotype.svg" alt="Kenkata Webshop"></a>
                 </div>
-                <div class="search"></div>
+                <div class="search">
+                    <form id="searchboxForm">
+                        <input id="query" type="text" placeholder="Search products...">
+                        <button type="submit"><i class="fa-regular fa-magnifying-glass"></i></button>
+                    </form>
+                </div>
                 <div class="menu-links">
                     <a class="menu-link" href="account.html"><i class="fa-regular fa-user me-2"></i> My account</a>
                     <a class="menu-link" href="#"><i class="fa-regular fa-heart"></i></a>
@@ -70,6 +75,7 @@
                     </a>
                 </div>
             </div>
+<!-- my navbar with dropdown menu and special offer -->
             <nav>
                 <div class="container">
                     <div class="browse-categories">
@@ -93,7 +99,7 @@
             </nav>
         </div>
     </header>
-    
+ <!--section with the big image and text shopping is more fun  -->
     <section class="showcase">
         <div class="container">
             <div class="showcase-body">
@@ -104,7 +110,7 @@
             <img src="images/showcase-image.svg" alt="two people standing together">
         </div>
     </section>
-
+<!-- the 4 boxes with web-shop info -->
     <section class="webshop-info">
         <div class="container">
             <div class="info-box">
@@ -135,10 +141,9 @@
                     <p>We understand your urgency and we deliver in a fast way</p>
                 </div>
             </div>
-            
         </div>
     </section>
-
+<!-- section shop by category and all grid boxes -->
     <section class="shop-by-category">
         <div class="container">
             <div class="section-title">
@@ -191,10 +196,9 @@
                     </div>
                 </a>
             </div>
-
         </div>
     </section>
-
+<!-- section with new arrivals and cards-->
     <section class="new-arrivals">
         <div class="container">
             <div class="section-title">
@@ -202,9 +206,7 @@
                 <img src="images/waveline.svg" alt="waveline">
                 <p>Check out our latest products from top fashion designers</p>
             </div>
-
             <div class="row row-cols-1 row-cols-md-3 g-4">
-
                 <div class="col">
                     <div class="card h-100">
                         <ul class="card-menu">
@@ -233,7 +235,6 @@
                         <div class="card-background"></div>
                     </div>
                 </div>
-
                 <div class="col">
                     <div class="card h-100">
                         <ul class="card-menu">
@@ -262,7 +263,6 @@
                         <div class="card-background"></div>
                     </div>
                 </div>
-
                 <div class="col">
                     <div class="card h-100">
                         <ul class="card-menu">
@@ -294,8 +294,7 @@
             </div>
         </div> 
     </section>
-
-
+<!-- section for new costumer and discount -->
     <section class="new-customer">
         <div class="container">
             <div class="new-customer-body">
@@ -309,7 +308,7 @@
             </div>
         </div>
     </section>
-
+<!-- section for featured products and cards -->
     <section class="featured-products">
         <div class="container">
             <div class="section-title">
@@ -318,7 +317,6 @@
                 <p>Check out our monthly featured products from top brands</p>
             </div>
             <div class="row row-cols-1 row-cols-md-3 g-4">
-
                 <div class="col">
                     <div class="card h-100">
                         <ul class="card-menu">
@@ -347,7 +345,6 @@
                         <div class="card-background"></div>
                     </div>
                 </div>
-
                 <div class="col">
                     <div class="card h-100">
                         <ul class="card-menu">
@@ -376,7 +373,6 @@
                         <div class="card-background"></div>
                     </div>
                 </div>
-
                 <div class="col">
                     <div class="card h-100">
                         <ul class="card-menu">
@@ -408,7 +404,7 @@
             </div>
         </div>
     </section>
-
+<!-- flash sale part -->
     <section class="flash-sale">
         <div class="container">
             <div class="flash-sale-body">
@@ -424,8 +420,7 @@
             </div>
         </div>
     </section>
-
-
+<!-- new section for top sellers, with cards -->
     <section class="top-sellers">
         <div class="container">
             <div class="section-title">
@@ -435,7 +430,6 @@
             </div>
         </div>
     </section>
-
     <section class="top-seller-box">
         <div class="container">
                 <div id="seller-box-1" class="card">
@@ -518,6 +512,7 @@
                 </div>
         </div>
     </section>
+    <!-- subscribe part -->
     <section class="subscribe-now">
         <div class="container">
             <div class="subscribe-title">
@@ -531,6 +526,7 @@
             <div class="sub-body"></div>
         </div>
     </section>
+    <!-- last part in page with copyright -->
     <footer class="copyright">
         <div class="container">
             <p>&copy;Copyright 2022 Kenkata</p>
