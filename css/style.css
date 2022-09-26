@@ -1125,9 +1125,8 @@ a {
         }
         .subscribe-now .subscribe-title #subscribeboxform button {
             position: absolute;
-            margin-right: 2px;
             top: 4px;
-            right: 3px;
+            right: 4px;
             width: 100px;
             height: 82%;
             background-color: var(--color-theme);
