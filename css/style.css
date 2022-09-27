@@ -448,6 +448,9 @@ a {
             .showcase .showcase-body p {
                 margin: 2rem 0;
             }
+            .showcase .showcase-body a:hover {
+                text-decoration: none;
+            }
 
     .showcase img {
         display: none;
@@ -500,12 +503,6 @@ a {
             }
 
 /* shop-by-category */
-.shop-by-category {
-
-}
-    
-
-
 
     .shop-by-category .grid {
         display: grid;
@@ -588,6 +585,8 @@ a {
         overflow: hidden;
         background-color: var(--color-grey-3);
         border: none;
+
+    
         
     }
 
@@ -674,10 +673,31 @@ a {
         }
 
             .new-arrivals .card .card-menu li {
+                position: relative;
                 margin-top: 0.3rem;
                 margin-bottom: 0.3rem;
                 font-size: 1.0em;
             }
+            .new-arrivals .card .card-menu li .menu-ref {
+                display: inline;
+                position: absolute;
+                border-radius: 10px;
+                right: 40px;
+                border:1px solid #080C24;
+                background-color: var(--color-theme);
+                display: none;
+            }
+            .new-arrivals .card .card-menu li:hover .menu-ref {
+                display: inline;
+                position: absolute;
+                border-radius: 10px;
+                right: 40px;
+                border:1px solid #080C24;
+                background-color: var(--color-theme);
+                
+                
+            }
+
 
                 .new-arrivals .card .card-menu li a {
                     color: var(--color-grey-0);
@@ -907,9 +927,12 @@ a {
             display: inline-block;
             text-align: center;
             margin: 0 0.5rem;
-            border: dotted var(--color-theme);
+            border:dashed var(--color-theme);
+            position: relative;
         }
+        
         .flash-sale .container .circle span {
+            font-family: var(--font-play);
             font-weight: var(--font-weight-bold);
             color: var(--color-theme);
             font-size: 2.5rem;
@@ -922,8 +945,6 @@ a {
                 color: var(--color-theme-dark);
                 font-size: 1rem;
                 margin: -12px;
-                
-                
             }
     .flash-sale .container .circle a {
         position: absolute;
@@ -931,6 +952,9 @@ a {
         left: 33%;
         display: block;
     }
+        .flash-sale .container .circle a:hover {
+            text-decoration: none;
+        }
 
 
 .top-sellers .container {
@@ -1123,6 +1147,10 @@ a {
             font-size: 0.9rem;
             padding-left: 1.3rem;
         }
+        .subscribe-now .subscribe-title #subscribeboxform input::placeholder {
+            color: var(--color-grey-0);
+        }
+        
         .subscribe-now .subscribe-title #subscribeboxform button {
             position: absolute;
             top: 4px;
