@@ -1,8 +1,7 @@
+                /* inport an root, taken from Hans */
+
 @import url('https://fonts.googleapis.com/css2?family=Play:wght@400;700&family=Roboto:wght@400;500;700&display=swap');
 
-/* 
-    color theme
-*/
 :root {
     --color-theme: #20D3C2;
     --color-theme-light:#d7faf7;
@@ -36,7 +35,8 @@
     --border-radius-rounded: 50%;
 }
 
-/* general */
+/* general, copy from Hans*/
+
 html, body {
     font-size: 16px;
     line-height: 1.5;
@@ -52,6 +52,7 @@ html, body {
     font-weight: var(--font-weight-medium);
     padding-left: 1.75rem;
     padding-right: 1.75rem;
+    transition: 0.3s ease-in-out;
 }
 
     .btn-theme:hover {
@@ -66,10 +67,12 @@ html, body {
     font-weight: var(--font-weight-medium);
     padding-left: 1.75rem;
     padding-right: 1.75rem;
+    transition: 0.3s ease-in-out;
 }
     .btn-theme-dark:hover {
         background-color: var(--color-white);
         color: var(--color-theme);
+        text-decoration: none;
     }
 
 .btn-white {
@@ -79,11 +82,13 @@ html, body {
     font-weight: var(--font-weight-medium);
     padding-left: 1.75rem;
     padding-right: 1.75rem;
+    transition: 0.3s ease-in-out;
 }
     
     .btn-white:hover {
             background-color: var(--color-theme-dark);
             color: var(--color-white);
+            text-decoration: none;
     }
 
 .bg-theme {
@@ -194,7 +199,8 @@ a {
             color: var(--color-white);
         }
 
-/* top-menu */
+                            /* top-menu, copy from Hans */
+
 .top-menu {
     background-color: var(--color-theme);
     color: var(--color-white);
@@ -280,9 +286,8 @@ a {
                     margin: 0 0 0 0.3;
                 }
 
+                            /* main-menu, copy from Hans */
 
-
-/* main-menu */
 .main-menu {
     background-color: var(--color-white);
     color: var(--color-theme-dark);
@@ -374,7 +379,8 @@ a {
                     background-color: var(--color-theme-dark);
                 }
 
-/* navbar and special offer */
+                    /* navbar and special offer, copy from Hans */
+
     .main-menu nav {
         border-top: 1px solid var(--color-grey-2);
         border-bottom: 1px solid var(--color-grey-2);
@@ -388,7 +394,19 @@ a {
         .main-menu nav .browse-categories {
             flex: 2;
         }
-
+            .main-menu nav .browse-categories .dropdown-menu {
+                background-color: var(--color-theme);
+                color: var(--color-white);
+                
+            }
+                .main-menu nav .browse-categories .dropdown-menu a {
+                    color: var(--color-white);
+                }
+                    .main-menu nav .browse-categories .dropdown-menu a:hover {
+                        background-color: var(--color-theme-dark);
+                        color: var(--color-white);
+                        text-decoration: none;
+                    }
             .main-menu nav .browse-categories button {
                 background-color: var(--color-theme);
                 border: none;
@@ -426,7 +444,8 @@ a {
                 
         }  
         
-/* showcase */
+                        /* showcase, copy from Hans*/
+
 .showcase {
     background-color: var(--color-grey-3);
 }
@@ -446,7 +465,11 @@ a {
             }
 
             .showcase .showcase-body p {
-                margin: 2rem 0;
+                margin: 2.5rem 0;
+                padding-right: 2rem;
+                font-family: var(--font-roboto);
+                font-weight: var(--font-weight-regular);
+                font-size: 1rem;
             }
             .showcase .showcase-body a:hover {
                 text-decoration: none;
@@ -456,8 +479,8 @@ a {
         display: none;
       }
 
+                        /* webshop-info, copy from Hans*/
 
-/* webshop-info */
 .webshop-info {
     padding: 4rem 0;
 }
@@ -502,7 +525,7 @@ a {
                 color: var(--color-white);
             }
 
-/* shop-by-category */
+                            /* shop-by-category, copy from Hans */
 
     .shop-by-category .grid {
         display: grid;
@@ -572,12 +595,11 @@ a {
         grid-column: 5 / -1;
         grid-row: 3 / -1;
     }
-
+/* New arrivals, copy from Hans */
 .new-arrivals {
     padding-top: 6rem;
     
 }
-
     .new-arrivals .card {
         position: relative;
         height: 380px;
@@ -585,9 +607,6 @@ a {
         overflow: hidden;
         background-color: var(--color-grey-3);
         border: none;
-
-    
-        
     }
 
     .new-arrivals .card img {
@@ -619,7 +638,6 @@ a {
             .new-arrivals .card:hover .card-body h1 {
                 margin-bottom: 0;
             }
-
 
         .new-arrivals .card .card-body button {
             background-color: transparent;
@@ -678,35 +696,45 @@ a {
                 margin-bottom: 0.3rem;
                 font-size: 1.0em;
             }
-            .new-arrivals .card .card-menu li .menu-ref {
-                display: inline;
-                position: absolute;
-                border-radius: 10px;
-                right: 40px;
-                border:1px solid #080C24;
-                background-color: var(--color-theme);
-                display: none;
-            }
-            .new-arrivals .card .card-menu li:hover .menu-ref {
-                display: inline;
-                position: absolute;
-                border-radius: 10px;
-                right: 40px;
-                border:1px solid #080C24;
-                background-color: var(--color-theme);
-                
-                
-            }
-
-
+         
                 .new-arrivals .card .card-menu li a {
                     color: var(--color-grey-0);
                 }
                     .new-arrivals .card .card-menu li a:hover {
                         color: var(--color-theme);
                     }
+                .new-arrivals .card .card-menu li .menu-ref {
+                display: none;
+                align-items: baseline;
+                text-align: center;
+                width: 100px;
+                border-radius: 5px;
+                background-color: var(--color-theme);
+                color: var(--color-white);
+                font-family: var(--font-roboto);
+                font-weight: var(--font-weight-regular);
+                font-size: 13px;
+                padding: 0.4rem 0.1rem 0.4rem 0.1rem;
+                }
+                .new-arrivals .card .card-menu li:hover .menu-ref {
+                    display: inline;
+                    position: absolute;
+                    right: 45px;
+                    
+                }
+                    .new-arrivals .card .card-menu li:hover .menu-ref::after {
+                        content: '';
+                        position: absolute;
+                        left: 10px;
+                        width: 0;
+                        height: 0;
+                        border-top: 13px solid transparent;
+                        border-left: 26px solid var(--color-theme);
+                        border-bottom: 13px solid transparent;
+                        margin: -4px 0 0 73px;
+                    }
 
-                    /* worked with sebbe in bibblan */
+                    /*New customer, worked with Sebastian Adolfsson */
 
 .new-customer {
     background-color: var(--color-grey-1);
@@ -762,118 +790,149 @@ a {
         text-align: left;
     }
 
+                            /* Featured product, just copy the card from new arrivals */
+
 .featured-products {
     padding-top: 2rem;
 }
-.featured-products .card {
-    position: relative;
-    height: 380px;
-    width: 320px;
-    overflow: hidden;
-    background-color: var(--color-grey-3);
-    border: none;
-    
-}
-
-.featured-products .card img {
-    height: 400px;
-    
-}
-
-.featured-products .card .card-body {
-    position: absolute;
-    padding: 1rem;
-    bottom: 0;
-    height: 14%;
-    width: 100%;
-    color: var(--color-white);
-    z-index: 1;
-    transition: 0.3s ease-in-out;
-    font-size: 1rem;
-}
-    .featured-products .card:hover .card-body {
-        height: 40%;
+    .featured-products .card {
+        position: relative;
+        height: 380px;
+        width: 320px;
+        overflow: hidden;
+        background-color: var(--color-grey-3);
+        border: none;
+        
     }
-
-    .featured-products .card .card-body h1 {
-        font-size: 1.25rem;
-        margin-bottom: 1rem;
-        transition: 0.3s ease-in-out;
-        font-weight: var(--font-weight-regular);
-    }
-        .featured-products .card:hover .card-body h1 {
-            margin-bottom: 0;
+        .featured-products .card img {
+            height: 400px;
+            
         }
 
-
-    .featured-products .card .card-body button {
-        background-color: transparent;
-        color: var(--color-white);
-        border: 1px solid var(--color-white);
-        font-size: 0.875rem;
-        padding-left: 0.9rem;
-        padding-right: 0.9rem;
-        margin: 0.5rem 0;
-    }
-
-    .featured-products .card .card-body .card-old-price {
-        text-decoration: line-through;
-        margin: 0;
-    }
-    .featured-products .card .card-body .card-discount-price {
-        color: var(--color-theme);
-        font-weight: var(--font-weight-medium);
-        font-size: 1.5em;
-        margin: 0;
-    }
-
-.featured-products .card .card-background {
-    position: absolute;
-    bottom: 0;
-    height: 15%;
-    width: 100%;
-    background-color: var(--color-theme-dark);
-    opacity: 0.90;
-    transition: height 0.3s ease-in-out;
-
-}
-    .featured-products .card:hover .card-background {
-        height: 100%;
-    }
-
-.featured-products .card .card-menu {
-    position: absolute;
-    z-index: 1;
-    top: 121%;
-    right: 1rem;
-    list-style: none;
-    padding: 0.8rem;
-    font-size: 1.25rem;
-    border-radius: var(--border-radius-medium);
-    background-color: var(--color-white);
-    transition: top 0.3s ease-in-out;
-}
-    .featured-products .card:hover .card-menu {
-        top: 20px;
-    }
-
-        .featured-products .card .card-menu li {
-            margin-top: 0.3rem;
-            margin-bottom: 0.3rem;
-            font-size: 1.0em;
+        .featured-products .card .card-body {
+            position: absolute;
+            padding: 1rem;
+            bottom: 0;
+            height: 14%;
+            width: 100%;
+            color: var(--color-white);
+            z-index: 1;
+            transition: 0.3s ease-in-out;
+            font-size: 1rem;
         }
-
-            .featured-products .card .card-menu li a {
-                color: var(--color-grey-0);
+            .featured-products .card:hover .card-body {
+                height: 40%;
             }
-                .featured-products .card .card-menu li a:hover {
-                    color: var(--color-theme);
+
+        .featured-products .card .card-body h1 {
+            font-size: 1.25rem;
+            margin-bottom: 1rem;
+            transition: 0.3s ease-in-out;
+            font-weight: var(--font-weight-regular);
+        }
+            .featured-products .card:hover .card-body h1 {
+                margin-bottom: 0;
+            }
+
+            .featured-products .card .card-body button {
+                background-color: transparent;
+                color: var(--color-white);
+                border: 1px solid var(--color-white);
+                font-size: 0.875rem;
+                padding-left: 0.9rem;
+                padding-right: 0.9rem;
+                margin: 0.5rem 0;
+            }
+
+            .featured-products .card .card-body .card-old-price {
+                text-decoration: line-through;
+                margin: 0;
+            }
+            .featured-products .card .card-body .card-discount-price {
+                color: var(--color-theme);
+                font-weight: var(--font-weight-medium);
+                font-size: 1.5em;
+                margin: 0;
+            }
+
+        .featured-products .card .card-background {
+            position: absolute;
+            bottom: 0;
+            height: 15%;
+            width: 100%;
+            background-color: var(--color-theme-dark);
+            opacity: 0.90;
+            transition: height 0.3s ease-in-out;
+        }
+            .featured-products .card:hover .card-background {
+                height: 100%;
+            }
+
+        .featured-products .card .card-menu {
+            position: absolute;
+            z-index: 1;
+            top: 121%;
+            right: 1rem;
+            list-style: none;
+            padding: 0.8rem;
+            font-size: 1.25rem;
+            border-radius: var(--border-radius-medium);
+            background-color: var(--color-white);
+            transition: top 0.3s ease-in-out;
+        }
+            .featured-products .card:hover .card-menu {
+                top: 20px;
+            }
+
+                .featured-products .card .card-menu li {
+                    margin-top: 0.3rem;
+                    margin-bottom: 0.3rem;
+                    font-size: 1.0em;
                 }
+
+                    .featured-products .card .card-menu li a {
+                        color: var(--color-grey-0);
+                    }
+                        .featured-products .card .card-menu li a:hover {
+                            color: var(--color-theme);
+                        }
+                        .featured-products .card .card-menu li .menu-ref {
+                            display: none;
+                            align-items: baseline;
+                            text-align: center;
+                            width: 100px;
+                            border-radius: 5px;
+                            background-color: var(--color-theme);
+                            color: var(--color-white);
+                            font-family: var(--font-roboto);
+                            font-weight: var(--font-weight-regular);
+                            font-size: 13px;
+                            padding: 0.4rem 0.1rem 0.4rem 0.1rem;
+                            }
+                            .featured-products .card .card-menu li:hover .menu-ref {
+                                display: inline;
+                                position: absolute;
+                                right: 58px;
+                                
+                            }
+                                .featured-products .card .card-menu li:hover .menu-ref::after {
+                                    content: '';
+                                    position: absolute;
+                                    left: 10px;
+                                    width: 0;
+                                    height: 0;
+                                    border-top: 13px solid transparent;
+                                    border-left: 26px solid var(--color-theme);
+                                    border-bottom: 13px solid transparent;
+                                    margin: -4px 0 0 73px;
+                                }
+
+                    /* Flash sales with dots, done with Sebastian Adolfsson */
 
 .flash-sale {
     background-color: var(--color-theme-dark);
     margin-top: 7rem;
-    margin-top: 3rem;
+    margin-bottom: 3rem;
     
 }
     .flash-sale .container {
@@ -946,22 +1005,23 @@ a {
                 font-size: 1rem;
                 margin: -12px;
             }
-    .flash-sale .container .circle a {
-        position: absolute;
-        bottom: -75%;
-        left: 33%;
-        display: block;
-    }
-        .flash-sale .container .circle a:hover {
-            text-decoration: none;
+        .flash-sale .container .circle a {
+            position: absolute;
+            bottom: -75%;
+            left: 33%;
+            display: block;
         }
+            .flash-sale .container .circle a:hover {
+                text-decoration: none;
+            }
 
+                /* Top seller boxes, done with grid and did it with classmate Sebastian Adolfsson */
 
-.top-sellers .container {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+.top-seller-box {
+    padding-top: 3rem;
+    padding-bottom: 4rem;
+    
 }    
-
     .top-seller-box .container {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -974,8 +1034,7 @@ a {
         width: 100%;
         overflow: hidden;
         background-color: var(--color-grey-3);
-        border: none;
-        
+        border: none; 
     }
         .top-seller-box .card img {
             height: 400px;
@@ -993,95 +1052,126 @@ a {
                 width: 100%;
             }
 
-    .top-seller-box .card .card-body {
-        position: absolute;
-        padding: 1rem;
-        bottom: 0;
-        height: 52px;
-        width: 100%;
-        color: var(--color-white);
-        z-index: 1;
-        transition: 0.3s ease-in-out;
-        font-size: 1rem;
-    }
-        .top-seller-box .card:hover .card-body {
-            height: 155px;
-        }
-    
-        .top-seller-box .card .card-body h1 {
-            font-size: 1.25rem;
-            margin-bottom: 1rem;
-            transition: 0.3s ease-in-out;
-            font-weight: var(--font-weight-regular);
-        }
-            .top-seller-box .card:hover .card-body h1 {
-                margin-bottom: 0;
-            }
-    
-    
-        .top-seller-box .card .card-body button {
-            background-color: transparent;
+        .top-seller-box .card .card-body {
+            position: absolute;
+            padding: 1rem;
+            bottom: 0;
+            height: 52px;
+            width: 100%;
             color: var(--color-white);
-            border: 1px solid var(--color-white);
-            font-size: 0.875rem;
-            padding-left: 0.9rem;
-            padding-right: 0.9rem;
-            margin: 0.5rem 0;
+            z-index: 1;
+            transition: 0.3s ease-in-out;
+            font-size: 1rem;
         }
-    
-        .top-seller-box .card .card-body .card-old-price {
-            text-decoration: line-through;
-            margin: 0;
-        }
-        .top-seller-box .card .card-body .card-discount-price {
-            color: var(--color-theme);
-            font-weight: var(--font-weight-medium);
-            font-size: 1.5em;
-            margin: 0;
-        }
-    
-    .top-seller-box .card .card-background {
-        position: absolute;
-        bottom: 0;
-        height: 55px;
-        width: 100%;
-        background-color: var(--color-theme-dark);
-        opacity: 0.90;
-        transition: height 0.3s ease-in-out;
-    
-    }
-        .top-seller-box .card:hover .card-background {
-            height: 100%;
-        }
-    
-    .top-seller-box .card .card-menu {
-        position: absolute;
-        z-index: 1;
-        top: 121%;
-        right: 1rem;
-        list-style: none;
-        padding: 0.8rem;
-        font-size: 1.25rem;
-        border-radius: var(--border-radius-medium);
-        background-color: var(--color-white);
-        transition: top 0.3s ease-in-out;
-    }
-        .top-seller-box .card:hover .card-menu {
-            top: 20px;
-        }
-    
-            .top-seller-box .card .card-menu li {
-                margin-top: 0.3rem;
-                margin-bottom: 0.3rem;
-                font-size: 1.0em;
+            .top-seller-box .card:hover .card-body {
+                height: 155px;
+            }
+        
+            .top-seller-box .card .card-body h1 {
+                font-size: 1.25rem;
+                margin-bottom: 1rem;
+                transition: 0.3s ease-in-out;
+                font-weight: var(--font-weight-regular);
+            }
+                .top-seller-box .card:hover .card-body h1 {
+                    margin-bottom: 0;
+                }
+
+            .top-seller-box .card .card-body button {
+                background-color: transparent;
+                color: var(--color-white);
+                border: 1px solid var(--color-white);
+                font-size: 0.875rem;
+                padding-left: 0.9rem;
+                padding-right: 0.9rem;
+                margin: 0.5rem 0;
             }
     
-                .top-seller-box .card .card-menu li a {
-                    color: var(--color-grey-0);
+            .top-seller-box .card .card-body .card-old-price {
+                text-decoration: line-through;
+                margin: 0;
+            }
+            .top-seller-box .card .card-body .card-discount-price {
+                color: var(--color-theme);
+                font-weight: var(--font-weight-medium);
+                font-size: 1.5em;
+                margin: 0;
+            }
+    
+        .top-seller-box .card .card-background {
+            position: absolute;
+            bottom: 0;
+            height: 55px;
+            width: 100%;
+            background-color: var(--color-theme-dark);
+            opacity: 0.90;
+            transition: height 0.3s ease-in-out;
+        
+        }
+            .top-seller-box .card:hover .card-background {
+                height: 100%;
+            }
+    
+        .top-seller-box .card .card-menu {
+            position: absolute;
+            z-index: 1;
+            top: 121%;
+            right: 1rem;
+            list-style: none;
+            padding: 0.8rem;
+            font-size: 1.25rem;
+            border-radius: var(--border-radius-medium);
+            background-color: var(--color-white);
+            transition: top 0.3s ease-in-out;
+        }
+            .top-seller-box .card:hover .card-menu {
+                top: 20px;
+            }
+        
+                .top-seller-box .card .card-menu li {
+                    margin-top: 0.3rem;
+                    margin-bottom: 0.3rem;
+                    font-size: 1.0em;
                 }
-                    .top-seller-box .card .card-menu li a:hover {
-                        color: var(--color-theme);
+        
+                    .top-seller-box .card .card-menu li a {
+                        color: var(--color-grey-0);
                     }
+                        .top-seller-box .card .card-menu li a:hover {
+                            color: var(--color-theme);
+                        }
+                        .top-seller-box .card .card-menu li .menu-ref {
+                            display: none;
+                            align-items: baseline;
+                            text-align: center;
+                            width: 100px;
+                            border-radius: 5px;
+                            background-color: var(--color-theme);
+                            color: var(--color-white);
+                            font-family: var(--font-roboto);
+                            font-weight: var(--font-weight-regular);
+                            font-size: 13px;
+                            padding: 0.4rem 0.1rem 0.4rem 0.1rem;
+                            }
+                            .top-seller-box .card .card-menu li:hover .menu-ref {
+                                display: inline;
+                                position: absolute;
+                                right: 58px;
+                                
+                            }
+                                .top-seller-box .card .card-menu li:hover .menu-ref::after {
+                                    content: '';
+                                    position: absolute;
+                                    left: 10px;
+                                    width: 0;
+                                    height: 0;
+                                    border-top: 13px solid transparent;
+                                    border-left: 26px solid var(--color-theme);
+                                    border-bottom: 13px solid transparent;
+                                    margin: -4px 0 0 73px;
+                                }
+
+                        /* dicides how mutch every box takes in the grid system */
 
 #seller-box-1 {
     grid-column: 1 / 2;
@@ -1096,6 +1186,7 @@ a {
     grid-row: 2 / -1;
 } 
 
+                        /* subscribe now part, also done with Sebastian Adolfsson */
 
 .subscribe-now {
     margin-top: 2rem;
@@ -1111,8 +1202,6 @@ a {
         width: 400px;
     }
         
-    
-
         .subscribe-now .container .subscribe-title h1 {
             font-family: var(--font-play);
             font-weight: var(--font-weight-bold);
@@ -1174,10 +1263,8 @@ a {
         background-color: var(--color-grey-1);
     }
 
+                            /* breadcrumb for account and html, copy by Hans*/
 
-
-
-/* forms inlogg */
 .site-title {
     background-color: var(--color-theme-dark-light);
     color: #fff;
@@ -1185,47 +1272,49 @@ a {
     padding-bottom: 3rem;
 }
 
-.site-title .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.site-title h1 {
-    color: var(--color-theme);
-    font-size: 1.5rem;
-    margin: 0;
-    font-family: var(--font-roboto);
-    font-weight: var(--font-weight-medium);
-}
-.site-title nav ul {
-    display: flex;
-    align-items: center;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-
-.site-title .breadcrumb {
-    list-style: none;
-    margin: 0;
-  }
-    .site-title .breadcrumb li {
-        display: inline;
-        font-size: 18px;
+    .site-title .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
     }
-        .site-title .breadcrumb li+li:before {
-            padding: 0 0.7rem 0 1rem;
-            color: var(--color-white);
-            content: "/\00a0";
+    .site-title h1 {
+        color: var(--color-theme);
+        font-size: 1.5rem;
+        margin: 0;
+        font-family: var(--font-roboto);
+        font-weight: var(--font-weight-medium);
+    }
+    .site-title nav ul {
+        display: flex;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    .site-title .breadcrumb {
+        list-style: none;
+        margin: 0;
+    }
+        .site-title .breadcrumb li {
+            display: inline;
+            font-size: 18px;
         }
-        .site-title .breadcrumb li a {
-            color: var(--color-theme);
-            text-decoration: none;
-        }
-            .site-title .breadcrumb li a:hover {
-                color: var(--color-theme-light);
-                text-decoration: underline;
+            .site-title .breadcrumb li+li:before {
+                padding: 0 0.7rem 0 1rem;
+                color: var(--color-white);
+                content: "/\00a0";
             }
+            .site-title .breadcrumb li a {
+                color: var(--color-theme);
+                text-decoration: none;
+            }
+                .site-title .breadcrumb li a:hover {
+                    color: var(--color-theme-light);
+                    text-decoration: underline;
+                }
+
+                        /* login and register form, copy by Hans */
 
 .signup-signin {
     margin: 6rem 0;
@@ -1296,7 +1385,7 @@ a {
 
         
 
-
+/* started with media for responsive, but dident have the time to finish all page with it. But i neeed this for the page to function well or els i need to redo alot of css  */
 
 @media (min-width: 578px) {
     .top-menu .menu-links {
